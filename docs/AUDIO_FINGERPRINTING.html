@@ -1,0 +1,669 @@
+<!DOCTYPE html><html><head>
+      <title>AUDIO_FINGERPRINTING</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/shakirzareen/.antigravity/extensions/shd101wyy.markdown-preview-enhanced-0.8.20-universal/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="custom-audio-fingerprinting-algorithm-for-duplicate-detection">Custom Audio Fingerprinting Algorithm for Duplicate Detection </h1>
+<blockquote>
+<p><strong>Technical Deep-Dive Document</strong></p>
+<p>This document explains the custom FFT-based audio fingerprinting algorithm used in the Duplicate Music Finder app to detect duplicate audio files regardless of file format, bitrate, or metadata differences.</p>
+</blockquote>
+<hr>
+<h2 id="overview">Overview </h2>
+<p>The algorithm analyzes the <strong>spectral characteristics</strong> of audio files using Fast Fourier Transform (FFT) to create a "fingerprint" that can identify the same song even when:</p>
+<ul>
+<li>Encoded at different bitrates (128kbps vs 320kbps)</li>
+<li>In different formats (MP3 vs M4A vs WAV)</li>
+<li>Slightly trimmed or offset (up to ~10 seconds difference)</li>
+</ul>
+<hr>
+<h2 id="architecture">Architecture </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────────────────────────────────────┐
+│                     AUDIO FINGERPRINTING PIPELINE                    │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│   Audio File                                                         │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 1. Audio Decoding    │  ← AVAudioFile (any format → PCM)        │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 2. Mono Conversion   │  ← Mix stereo channels                    │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 3. Windowing         │  ← 2048 samples/window, 50% overlap       │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 4. FFT Analysis      │  ← Apple Accelerate/vDSP framework        │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 5. Peak Extraction   │  ← Top 5 frequencies per window          │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 6. Hash Generation   │  ← Condensed hash for fast filtering     │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   AudioFingerprint (peaks + hash + duration)                         │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+</code></pre><hr>
+<h2 id="step-1-audio-decoding">Step 1: Audio Decoding </h2>
+<p><strong>Framework:</strong> <code>AVFoundation</code> (AVAudioFile)</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-let">let</span> audioFile <span class="token operator">=</span> <span class="token keyword keyword-try">try</span> <span class="token class-name">AVAudioFile</span><span class="token punctuation">(</span>forReading<span class="token punctuation">:</span> url<span class="token punctuation">)</span>
+<span class="token keyword keyword-let">let</span> sampleRate <span class="token operator">=</span> <span class="token class-name">Float</span><span class="token punctuation">(</span>audioFile<span class="token punctuation">.</span>processingFormat<span class="token punctuation">.</span>sampleRate<span class="token punctuation">)</span>  <span class="token comment">// Usually 44100 Hz</span>
+</code></pre><p><strong>What happens:</strong></p>
+<ul>
+<li>Any audio format (MP3, M4A, AAC, FLAC, WAV, AIFF) is decoded to raw PCM samples</li>
+<li>This makes the fingerprint <strong>format-independent</strong> - the same song sounds identical regardless of container</li>
+</ul>
+<hr>
+<h2 id="step-2-sample-selection">Step 2: Sample Selection </h2>
+<p><strong>Configuration Options:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Duration</th>
+<th>Frames at 44.1kHz</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 seconds</td>
+<td>441,000</td>
+<td>Fast scanning</td>
+</tr>
+<tr>
+<td>30 seconds</td>
+<td>1,323,000</td>
+<td>Balance speed/accuracy</td>
+</tr>
+<tr>
+<td>60 seconds</td>
+<td>2,646,000</td>
+<td>High accuracy</td>
+</tr>
+<tr>
+<td>Full Track</td>
+<td>All frames</td>
+<td>Maximum accuracy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Skip Intro:</strong> The algorithm skips the first <strong>5 seconds</strong> to avoid:</p>
+<ul>
+<li>Silence at the start</li>
+<li>Intro jingles or effects</li>
+<li>Different fade-in styles</li>
+</ul>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-let">let</span> skipSeconds<span class="token punctuation">:</span> <span class="token class-name">Double</span> <span class="token operator">=</span> <span class="token number">5.0</span>
+<span class="token keyword keyword-let">let</span> skipFrames <span class="token operator">=</span> <span class="token class-name">AVAudioFramePosition</span><span class="token punctuation">(</span>skipSeconds <span class="token operator">*</span> <span class="token class-name">Double</span><span class="token punctuation">(</span>sampleRate<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-let">let</span> startFrame <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>skipFrames<span class="token punctuation">,</span> <span class="token class-name">Int64</span><span class="token punctuation">(</span>totalFrames<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token class-name">Int64</span><span class="token punctuation">(</span>targetFrames<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><hr>
+<h2 id="step-3-mono-conversion">Step 3: Mono Conversion </h2>
+<p><strong>Why:</strong> Stereo files have 2 channels with potentially different data. To ensure consistent fingerprints regardless of stereo/mono source, we mix down to mono.</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token comment">// Mix channels to mono</span>
+<span class="token keyword keyword-var">var</span> monoSamples <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token class-name">Float</span><span class="token punctuation">]</span><span class="token punctuation">(</span>repeating<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> frameCount<span class="token punctuation">)</span>
+<span class="token keyword keyword-for">for</span> channel <span class="token keyword keyword-in">in</span> <span class="token number">0</span><span class="token operator">..&lt;</span>channelCount <span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> samples <span class="token operator">=</span> <span class="token class-name">UnsafeBufferPointer</span><span class="token punctuation">(</span>start<span class="token punctuation">:</span> channelData<span class="token punctuation">[</span>channel<span class="token punctuation">]</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> frameCount<span class="token punctuation">)</span>
+    <span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token number">0</span><span class="token operator">..&lt;</span>frameCount <span class="token punctuation">{</span>
+        monoSamples<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> samples<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">/</span> <span class="token class-name">Float</span><span class="token punctuation">(</span>channelCount<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>Result:</strong> Single array of <code>Float</code> values representing the audio waveform.</p>
+<hr>
+<h2 id="step-4-windowing-sliding-window-analysis">Step 4: Windowing (Sliding Window Analysis) </h2>
+<p><strong>The Core Concept:</strong></p>
+<p>Audio is analyzed in small overlapping chunks called "windows":</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Audio Stream:     |-----------------------------------------------→
+                   ↑        ↑        ↑        ↑        ↑
+Window 1:         [====2048====]
+Window 2:              [====2048====]     ← 50% overlap (1024 samples)
+Window 3:                   [====2048====]
+Window 4:                        [====2048====]
+...
+</code></pre><p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fftSize</code></td>
+<td>2048 samples</td>
+<td>~46ms at 44.1kHz - captures enough frequency detail</td>
+</tr>
+<tr>
+<td><code>hopSize</code></td>
+<td>1024 samples</td>
+<td>50% overlap - ensures no audio is missed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Window Count Example:</strong></p>
+<ul>
+<li>30-second clip at 44.1kHz = 1,323,000 samples</li>
+<li>Windows = (1,323,000 - 2048) / 1024 ≈ <strong>1,290 windows</strong></li>
+</ul>
+<h3 id="hann-window-function">Hann Window Function </h3>
+<p>Before FFT, each window is multiplied by a <strong>Hann window</strong> to reduce spectral leakage:</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-var">var</span> window <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token class-name">Float</span><span class="token punctuation">]</span><span class="token punctuation">(</span>repeating<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> count<span class="token punctuation">:</span> fftSize<span class="token punctuation">)</span>
+<span class="token function">vDSP_hann_window</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>window<span class="token punctuation">,</span> <span class="token function">vDSP_Length</span><span class="token punctuation">(</span>fftSize<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">Int32</span><span class="token punctuation">(</span>vDSP_HANN_NORM<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">vDSP_vmul</span><span class="token punctuation">(</span>windowSamples<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> window<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>windowedSamples<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token function">vDSP_Length</span><span class="token punctuation">(</span>fftSize<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Visual of Hann Window:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>1.0 ─────────────╱╲─────────────
+                ╱  ╲
+               ╱    ╲
+              ╱      ╲
+0.0 ─────────╱        ╲─────────
+             0       2048
+</code></pre><p>This prevents "edge effects" where frequencies appear stronger than they are due to the window boundary.</p>
+<hr>
+<h2 id="step-5-fft-fast-fourier-transform">Step 5: FFT (Fast Fourier Transform) </h2>
+<p><strong>Framework:</strong> Apple's <code>Accelerate</code> framework (<code>vDSP</code>)</p>
+<p><strong>What FFT Does:</strong> Converts time-domain audio (waveform) to frequency-domain (spectrum).</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-let">let</span> log2n <span class="token operator">=</span> <span class="token function">vDSP_Length</span><span class="token punctuation">(</span><span class="token function">log2</span><span class="token punctuation">(</span><span class="token class-name">Float</span><span class="token punctuation">(</span>fftSize<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// = 11 for 2048</span>
+<span class="token keyword keyword-let">let</span> fftSetup <span class="token operator">=</span> <span class="token function">vDSP_create_fftsetup</span><span class="token punctuation">(</span>log2n<span class="token punctuation">,</span> <span class="token class-name">FFTRadix</span><span class="token punctuation">(</span>kFFTRadix2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token function">vDSP_fft_zrip</span><span class="token punctuation">(</span>fftSetup<span class="token punctuation">,</span> <span class="token operator">&amp;</span>splitComplex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> log2n<span class="token punctuation">,</span> <span class="token class-name">FFTDirection</span><span class="token punctuation">(</span><span class="token constant">FFT_FORWARD</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Output:</strong> Array of 1024 complex numbers representing frequency magnitudes from 0 Hz to 22,050 Hz (Nyquist frequency).</p>
+<h3 id="frequency-resolution">Frequency Resolution </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Bin Width = Sample Rate / FFT Size
+          = 44100 / 2048
+          ≈ 21.5 Hz per bin
+</code></pre><table>
+<thead>
+<tr>
+<th>Bin Index</th>
+<th>Frequency Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0 - 21.5 Hz</td>
+</tr>
+<tr>
+<td>1</td>
+<td>21.5 - 43 Hz</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>14</td>
+<td>300 - 322 Hz</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>139</td>
+<td>2980 - 3000 Hz</td>
+</tr>
+</tbody>
+</table>
+<h3 id="magnitude-calculation">Magnitude Calculation </h3>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token comment">// Calculate magnitude = sqrt(real² + imag²)</span>
+<span class="token function">vDSP_zvmags</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>splitComplex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>magnitudes<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token function">vDSP_Length</span><span class="token punctuation">(</span>fftSize <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><hr>
+<h2 id="step-6-peak-extraction">Step 6: Peak Extraction </h2>
+<p><strong>Goal:</strong> Find the strongest frequencies in each window (these characterize the sound).</p>
+<p><strong>Frequency Range Filtering:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>minFrequency</code></td>
+<td>300 Hz</td>
+<td>Ignore sub-bass rumble/noise</td>
+</tr>
+<tr>
+<td><code>maxFrequency</code></td>
+<td>3000 Hz</td>
+<td>Focus on vocal/instrument fundamentals</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Peak Detection Algorithm:</strong></p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-let">let</span> binWidth <span class="token operator">=</span> sampleRate <span class="token operator">/</span> <span class="token class-name">Float</span><span class="token punctuation">(</span>fftSize<span class="token punctuation">)</span>  <span class="token comment">// ~21.5 Hz</span>
+<span class="token keyword keyword-let">let</span> minBin <span class="token operator">=</span> <span class="token class-name">Int</span><span class="token punctuation">(</span><span class="token number">300</span> <span class="token operator">/</span> binWidth<span class="token punctuation">)</span>   <span class="token comment">// ≈ 14</span>
+<span class="token keyword keyword-let">let</span> maxBin <span class="token operator">=</span> <span class="token class-name">Int</span><span class="token punctuation">(</span><span class="token number">3000</span> <span class="token operator">/</span> binWidth<span class="token punctuation">)</span>  <span class="token comment">// ≈ 139</span>
+
+<span class="token comment">// Find local maxima</span>
+<span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token punctuation">(</span>minBin <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">..&lt;</span>maxBin <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> magnitudes<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> magnitudes<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> magnitudes<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> magnitudes<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+        <span class="token comment">// This is a peak!</span>
+        <span class="token keyword keyword-let">let</span> frequency <span class="token operator">=</span> <span class="token class-name">Float</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">*</span> binWidth
+        peaks<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">(</span>frequency<span class="token punctuation">,</span> magnitudes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Sort by magnitude, take top 5</span>
+peaks<span class="token punctuation">.</span>sort <span class="token punctuation">{</span> <span class="token short-argument">$0</span><span class="token punctuation">.</span>magnitude <span class="token operator">&gt;</span> <span class="token short-argument">$1</span><span class="token punctuation">.</span>magnitude <span class="token punctuation">}</span>
+<span class="token keyword keyword-let">let</span> topPeaks <span class="token operator">=</span> peaks<span class="token punctuation">.</span><span class="token keyword keyword-prefix">prefix</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Output per window:</strong> Array of 5 frequencies (sorted ascending), e.g., <code>[345.0, 520.0, 890.0, 1240.0, 2100.0]</code></p>
+<hr>
+<h2 id="step-7-hash-generation">Step 7: Hash Generation </h2>
+<p><strong>Purpose:</strong> Create a condensed "signature" for fast pre-filtering before detailed comparison.</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-static">static</span> <span class="token keyword keyword-func">func</span> <span class="token function-definition function">generateHash</span><span class="token punctuation">(</span>from peaks<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token class-name">Float</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token class-name">String</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-var">var</span> hashComponents<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">UInt32</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    
+    <span class="token comment">// Sample ~10 windows evenly distributed</span>
+    <span class="token keyword keyword-let">let</span> step <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> peaks<span class="token punctuation">.</span>count <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token function">stride</span><span class="token punctuation">(</span>from<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> to<span class="token punctuation">:</span> peaks<span class="token punctuation">.</span>count<span class="token punctuation">,</span> by<span class="token punctuation">:</span> step<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-if">if</span> <span class="token keyword keyword-let">let</span> topPeak <span class="token operator">=</span> peaks<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>first <span class="token punctuation">{</span>
+            <span class="token comment">// Quantize frequency to 50Hz bands</span>
+            <span class="token keyword keyword-let">let</span> quantized <span class="token operator">=</span> <span class="token class-name">UInt32</span><span class="token punctuation">(</span>topPeak <span class="token operator">/</span> <span class="token number">50.0</span><span class="token punctuation">)</span>
+            hashComponents<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>quantized<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// Convert to hex string</span>
+    <span class="token keyword keyword-return">return</span> hashComponents<span class="token punctuation">.</span>map <span class="token punctuation">{</span> <span class="token class-name">String</span><span class="token punctuation">(</span>format<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"%02x"</span></span><span class="token punctuation">,</span> <span class="token short-argument">$0</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">joined</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>Example:</strong></p>
+<ul>
+<li>Top peaks from 10 sampled windows: [350, 400, 380, 420, 360, 390, 410, 370, 385, 395]</li>
+<li>Quantized (÷50): [7, 8, 7, 8, 7, 7, 8, 7, 7, 7]</li>
+<li>Hash: <code>"07080708070708070707"</code></li>
+</ul>
+<hr>
+<h2 id="the-audiofingerprint-data-structure">The AudioFingerprint Data Structure </h2>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-struct">struct</span> <span class="token class-name">AudioFingerprint</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> peaks<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token class-name">Float</span><span class="token punctuation">]</span><span class="token punctuation">]</span>        <span class="token comment">// ~1290 windows × 5 peaks each</span>
+    <span class="token keyword keyword-let">let</span> hash<span class="token punctuation">:</span> <span class="token class-name">String</span>            <span class="token comment">// ~20 character hex string</span>
+    <span class="token keyword keyword-let">let</span> analyzedDuration<span class="token punctuation">:</span> <span class="token class-name">Double</span> <span class="token comment">// e.g., 30.0 seconds</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h2 id="fingerprint-comparison-algorithm">Fingerprint Comparison Algorithm </h2>
+<h3 id="overview-1">Overview </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌───────────────────────────────────────────────────────────────┐
+│                    COMPARISON PIPELINE                         │
+├───────────────────────────────────────────────────────────────┤
+│                                                                │
+│   Fingerprint A              Fingerprint B                     │
+│        ↓                          ↓                            │
+│   ┌───────────────────────────────────────────────────────┐   │
+│   │ 1. Direct Comparison (offset = 0)                      │   │
+│   │    → If similarity ≥ 85%, return immediately           │   │
+│   └───────────────────────────────────────────────────────┘   │
+│        ↓ (if &lt; 85%)                                           │
+│   ┌───────────────────────────────────────────────────────┐   │
+│   │ 2. Sliding Window Comparison                           │   │
+│   │    → Try offsets: 20, 40, 60, ... 400 windows         │   │
+│   │    → Check both directions (A offset, B offset)        │   │
+│   │    → Early exit if ≥ 85% found                         │   │
+│   └───────────────────────────────────────────────────────┘   │
+│        ↓                                                       │
+│   Return best similarity found (0.0 - 1.0)                     │
+│                                                                │
+└───────────────────────────────────────────────────────────────┘
+</code></pre><h3 id="sliding-window-offsets">Sliding Window Offsets </h3>
+<p><strong>Why needed:</strong> Same song may be trimmed differently:</p>
+<ul>
+<li>Song A starts with 3-second intro</li>
+<li>Song B has intro removed</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Song A: [INTRO------|=====ACTUAL SONG======================]
+Song B: [=====ACTUAL SONG======================]
+         ↑
+         Offset Song A by ~130 windows to align
+</code></pre><p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>maxOffset</code></td>
+<td>400 windows</td>
+<td>~10 seconds at 44.1kHz</td>
+</tr>
+<tr>
+<td><code>stepSize</code></td>
+<td>20 windows</td>
+<td>~0.5 seconds - balance speed/accuracy</td>
+</tr>
+</tbody>
+</table>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-let">let</span> maxOffset <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">,</span> <span class="token function">min</span><span class="token punctuation">(</span>peaks<span class="token punctuation">.</span>count<span class="token punctuation">,</span> other<span class="token punctuation">.</span>peaks<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-let">let</span> stepSize <span class="token operator">=</span> <span class="token number">20</span>
+
+<span class="token keyword keyword-for">for</span> offset <span class="token keyword keyword-in">in</span> <span class="token function">stride</span><span class="token punctuation">(</span>from<span class="token punctuation">:</span> stepSize<span class="token punctuation">,</span> to<span class="token punctuation">:</span> maxOffset<span class="token punctuation">,</span> by<span class="token punctuation">:</span> stepSize<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> sim1 <span class="token operator">=</span> <span class="token function">compareAtOffset</span><span class="token punctuation">(</span>selfOffset<span class="token punctuation">:</span> offset<span class="token punctuation">,</span> otherOffset<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> other<span class="token punctuation">:</span> other<span class="token punctuation">)</span>
+    <span class="token keyword keyword-let">let</span> sim2 <span class="token operator">=</span> <span class="token function">compareAtOffset</span><span class="token punctuation">(</span>selfOffset<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> otherOffset<span class="token punctuation">:</span> offset<span class="token punctuation">,</span> other<span class="token punctuation">:</span> other<span class="token punctuation">)</span>
+    bestSimilarity <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>bestSimilarity<span class="token punctuation">,</span> sim1<span class="token punctuation">,</span> sim2<span class="token punctuation">)</span>
+    
+    <span class="token keyword keyword-if">if</span> bestSimilarity <span class="token operator">&gt;=</span> <span class="token number">0.85</span> <span class="token punctuation">{</span>
+        <span class="token keyword keyword-return">return</span> bestSimilarity  <span class="token comment">// Early exit</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="window-by-window-comparison">Window-by-Window Comparison </h3>
+<p><strong>Optimization:</strong> Instead of comparing all ~1290 windows, sample every 10th window:</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-let">let</span> sampleStep <span class="token operator">=</span> <span class="token number">10</span>  <span class="token comment">// Compare ~130 windows instead of 1290</span>
+
+<span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token function">stride</span><span class="token punctuation">(</span>from<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> to<span class="token punctuation">:</span> compareLength<span class="token punctuation">,</span> by<span class="token punctuation">:</span> sampleStep<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> selfPeaks <span class="token operator">=</span> peaks<span class="token punctuation">[</span>selfStart <span class="token operator">+</span> i<span class="token punctuation">]</span>      <span class="token comment">// 5 frequencies</span>
+    <span class="token keyword keyword-let">let</span> otherPeaks <span class="token operator">=</span> other<span class="token punctuation">.</span>peaks<span class="token punctuation">[</span>otherStart <span class="token operator">+</span> i<span class="token punctuation">]</span>  <span class="token comment">// 5 frequencies</span>
+    
+    <span class="token comment">// Count matching peaks</span>
+    <span class="token keyword keyword-var">var</span> windowMatches <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword keyword-for">for</span> selfPeak <span class="token keyword keyword-in">in</span> selfPeaks <span class="token punctuation">{</span>
+        <span class="token keyword keyword-for">for</span> otherPeak <span class="token keyword keyword-in">in</span> otherPeaks <span class="token punctuation">{</span>
+            <span class="token keyword keyword-if">if</span> <span class="token function">abs</span><span class="token punctuation">(</span>selfPeak <span class="token operator">-</span> otherPeak<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">50.0</span> <span class="token punctuation">{</span>  <span class="token comment">// ±50 Hz tolerance</span>
+                windowMatches <span class="token operator">+=</span> <span class="token number">1</span>
+                <span class="token keyword keyword-break">break</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// Window matches if ≥50% of peaks match</span>
+    <span class="token keyword keyword-if">if</span> <span class="token class-name">Float</span><span class="token punctuation">(</span>windowMatches<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token class-name">Float</span><span class="token punctuation">(</span>selfPeaks<span class="token punctuation">.</span>count<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">0.5</span> <span class="token punctuation">{</span>
+        matchingWindows <span class="token operator">+=</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+    sampledWindows <span class="token operator">+=</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-return">return</span> matchingWindows <span class="token operator">/</span> sampledWindows  <span class="token comment">// Similarity score</span>
+</code></pre><p><strong>Frequency Tolerance (±50 Hz):</strong></p>
+<ul>
+<li>Accounts for minor encoding differences</li>
+<li>MP3 compression can shift frequencies slightly</li>
+<li>Different sample rates after resampling</li>
+</ul>
+<hr>
+<h2 id="duplicate-detection-engine">Duplicate Detection Engine </h2>
+<h3 id="two-phase-approach">Two-Phase Approach </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────────────────────────────────┐
+│                    DUPLICATE ENGINE                              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│   All Tracks with Fingerprints                                   │
+│        ↓                                                         │
+│   ┌────────────────────────────────────────────────────────┐    │
+│   │ PHASE 1: Hash Bucketing                                 │    │
+│   │   Group tracks by identical hash                        │    │
+│   │   Only compare within same bucket (fast!)               │    │
+│   └────────────────────────────────────────────────────────┘    │
+│        ↓                                                         │
+│   ┌────────────────────────────────────────────────────────┐    │
+│   │ PHASE 2: Cross-Hash Comparison                          │    │
+│   │   Compare remaining tracks against ALL tracks           │    │
+│   │   Catches similar fingerprints in different buckets     │    │
+│   └────────────────────────────────────────────────────────┘    │
+│        ↓                                                         │
+│   Duplicate Groups                                               │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre><h3 id="phase-1-hash-pre-filtering">Phase 1: Hash Pre-Filtering </h3>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token comment">// Group by hash first</span>
+<span class="token keyword keyword-let">let</span> hashGroups <span class="token operator">=</span> <span class="token class-name">Dictionary</span><span class="token punctuation">(</span>grouping<span class="token punctuation">:</span> fingerprintedTracks<span class="token punctuation">)</span> <span class="token punctuation">{</span> track <span class="token operator">-&gt;</span> <span class="token class-name">String</span> <span class="token keyword keyword-in">in</span>
+    track<span class="token punctuation">.</span>fingerprint<span class="token operator">?</span><span class="token punctuation">.</span>hash <span class="token operator">??</span> <span class="token string-literal"><span class="token string">""</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Only compare tracks with matching hashes</span>
+<span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span>hash<span class="token punctuation">,</span> samehashTracks<span class="token punctuation">)</span> <span class="token keyword keyword-in">in</span> hashGroups <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> samehashTracks<span class="token punctuation">.</span>count <span class="token operator">&gt;=</span> <span class="token number">2</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Detailed comparison within group</span>
+        <span class="token comment">// O(N) within small group instead of O(N²) for all tracks</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="phase-2-cross-hash-comparison">Phase 2: Cross-Hash Comparison </h3>
+<p><strong>Why needed:</strong> Hash quantization (50 Hz bands) might put very similar fingerprints in different buckets.</p>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token comment">// Example: Two songs with top peaks at 348 Hz vs 352 Hz</span>
+<span class="token comment">// Quantized: 348/50 = 6, 352/50 = 7</span>
+<span class="token comment">// Different hash buckets! But they're the same song.</span>
+
+<span class="token keyword keyword-for">for</span> track1 <span class="token keyword keyword-in">in</span> unprocessedTracks <span class="token punctuation">{</span>
+    <span class="token keyword keyword-for">for</span> track2 <span class="token keyword keyword-in">in</span> allTracks <span class="token punctuation">{</span>
+        <span class="token keyword keyword-let">let</span> similarity <span class="token operator">=</span> track1<span class="token punctuation">.</span>fingerprint<span class="token operator">!</span><span class="token punctuation">.</span><span class="token function">similarity</span><span class="token punctuation">(</span>to<span class="token punctuation">:</span> track2<span class="token punctuation">.</span>fingerprint<span class="token operator">!</span><span class="token punctuation">)</span>
+        <span class="token keyword keyword-if">if</span> similarity <span class="token operator">&gt;=</span> threshold <span class="token punctuation">{</span>
+            <span class="token comment">// Found a match across different hash buckets!</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h2 id="configurable-parameters">Configurable Parameters </h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Location</th>
+<th>Values</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sample Duration</td>
+<td>UI Picker</td>
+<td>10s, 30s, 60s, Full</td>
+<td>Accuracy vs Speed</td>
+</tr>
+<tr>
+<td>Similarity Threshold</td>
+<td>UI Slider</td>
+<td>50% - 100%</td>
+<td>False positives vs misses</td>
+</tr>
+<tr>
+<td>FFT Size</td>
+<td>Code</td>
+<td>2048</td>
+<td>Frequency resolution</td>
+</tr>
+<tr>
+<td>Hop Size</td>
+<td>Code</td>
+<td>1024 (50% overlap)</td>
+<td>Time resolution</td>
+</tr>
+<tr>
+<td>Peaks per Window</td>
+<td>Code</td>
+<td>5</td>
+<td>Fingerprint precision</td>
+</tr>
+<tr>
+<td>Frequency Range</td>
+<td>Code</td>
+<td>300-3000 Hz</td>
+<td>Focus area</td>
+</tr>
+<tr>
+<td>Frequency Tolerance</td>
+<td>Code</td>
+<td>±50 Hz</td>
+<td>Match flexibility</td>
+</tr>
+<tr>
+<td>Sliding Window Max</td>
+<td>Code</td>
+<td>400 windows (~10s)</td>
+<td>Offset tolerance</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="performance-optimizations">Performance Optimizations </h2>
+<h3 id="1-parallel-processing">1. Parallel Processing </h3>
+<pre data-role="codeBlock" data-info="swift" class="language-swift swift"><code><span class="token keyword keyword-await">await</span> <span class="token function">withTaskGroup</span><span class="token punctuation">(</span>of<span class="token punctuation">:</span> <span class="token class-name">Void</span><span class="token punctuation">.</span><span class="token keyword keyword-self">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> group <span class="token keyword keyword-in">in</span>
+    <span class="token comment">// Process multiple files concurrently</span>
+    <span class="token keyword keyword-for">for</span> track <span class="token keyword keyword-in">in</span> tracks <span class="token punctuation">{</span>
+        group<span class="token punctuation">.</span>addTask <span class="token punctuation">{</span>
+            <span class="token keyword keyword-await">await</span> fingerprintService<span class="token punctuation">.</span><span class="token function">generateFingerprint</span><span class="token punctuation">(</span><span class="token keyword keyword-for">for</span><span class="token punctuation">:</span> track<span class="token punctuation">.</span>url<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="2-hash-pre-filtering">2. Hash Pre-Filtering </h3>
+<ul>
+<li>O(N) grouping first vs O(N²) full comparison</li>
+<li>Only detailed comparison within same hash bucket</li>
+</ul>
+<h3 id="3-sampled-comparison">3. Sampled Comparison </h3>
+<ul>
+<li>Compare every 10th window (130 vs 1290 comparisons)</li>
+<li>10x speedup with minimal accuracy loss</li>
+</ul>
+<h3 id="4-early-exit">4. Early Exit </h3>
+<ul>
+<li>Stop sliding window search on ≥85% match</li>
+<li>Return immediately on high-confidence matches</li>
+</ul>
+<h3 id="5-apple-accelerate-framework">5. Apple Accelerate Framework </h3>
+<ul>
+<li>Hardware-accelerated SIMD operations</li>
+<li>vDSP FFT is one of the fastest implementations available</li>
+</ul>
+<hr>
+<h2 id="why-this-works">Why This Works </h2>
+<h3 id="key-insight-spectral-stability">Key Insight: Spectral Stability </h3>
+<p>The frequency content of a song remains <strong>remarkably stable</strong> across:</p>
+<ul>
+<li>Different encodings (MP3, AAC, FLAC)</li>
+<li>Different bitrates (128, 256, 320 kbps)</li>
+<li>Minor pitch/speed variations</li>
+</ul>
+<p>The peak frequencies in the 300-3000 Hz range (vocals, lead instruments) are the "DNA" of the song.</p>
+<h3 id="what-changes-between-encodings">What Changes Between Encodings </h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Impact on Fingerprint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lower bitrate</td>
+<td>Slightly reduces high-frequency peaks</td>
+</tr>
+<tr>
+<td>MP3 vs AAC</td>
+<td>Minor phase differences (ignored by magnitude)</td>
+</tr>
+<tr>
+<td>Sample rate</td>
+<td>Handled by frequency-based analysis</td>
+</tr>
+<tr>
+<td>Stereo width</td>
+<td>Ignored by mono conversion</td>
+</tr>
+<tr>
+<td>Volume normalization</td>
+<td>Ignored (we only use peak <em>frequencies</em>, not magnitudes for matching)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="comparison-our-algorithm-vs-chromaprintacoustid">Comparison: Our Algorithm vs Chromaprint/AcoustID </h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Our Custom FFT</th>
+<th>Chromaprint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Local duplicate detection</td>
+<td>Global song identification</td>
+</tr>
+<tr>
+<td><strong>Dependency</strong></td>
+<td>None (pure Swift)</td>
+<td>Requires fpcalc binary</td>
+</tr>
+<tr>
+<td><strong>Database</strong></td>
+<td>Compares locally</td>
+<td>Queries AcoustID servers</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Very fast (local)</td>
+<td>Slower (network)</td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>High for duplicates</td>
+<td>Identifies exact songs</td>
+</tr>
+<tr>
+<td><strong>Use Case</strong></td>
+<td>Find duplicate files</td>
+<td>Fix incorrect metadata</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="summary">Summary </h2>
+<p>The custom audio fingerprinting algorithm:</p>
+<ol>
+<li><strong>Decodes</strong> audio to format-independent PCM</li>
+<li><strong>Analyzes</strong> frequency content using FFT in sliding windows</li>
+<li><strong>Extracts</strong> top 5 peak frequencies per window (300-3000 Hz)</li>
+<li><strong>Generates</strong> hash for fast pre-filtering</li>
+<li><strong>Compares</strong> using sliding window alignment with ±50 Hz tolerance</li>
+<li><strong>Optimizes</strong> with hash bucketing, sampling, and early exit</li>
+</ol>
+<p>This enables detection of the same song encoded at different bitrates, in different formats, or with minor trimming - all without any external dependencies.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

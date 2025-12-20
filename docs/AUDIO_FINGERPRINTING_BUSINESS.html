@@ -1,0 +1,481 @@
+<!DOCTYPE html><html><head>
+      <title>AUDIO_FINGERPRINTING_BUSINESS</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/shakirzareen/.antigravity/extensions/shd101wyy.markdown-preview-enhanced-0.8.20-universal/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="audio-fingerprinting-technology">Audio Fingerprinting Technology </h1>
+<h2 id="how-we-detect-duplicate--similar-music">How We Detect Duplicate &amp; Similar Music </h2>
+<blockquote>
+<p><strong>For Music Industry Professionals</strong></p>
+<p>This document explains how our audio fingerprinting technology identifies duplicate and similar audio files in your music catalog.</p>
+</blockquote>
+<hr>
+<h2 id="what-is-audio-fingerprinting">What Is Audio Fingerprinting? </h2>
+<p>Audio fingerprinting creates a <strong>unique "DNA profile"</strong> for each song by analyzing its frequency content. Just as human fingerprints identify a person regardless of clothing, audio fingerprints identify a song regardless of:</p>
+<ul>
+<li><strong>File format</strong> (MP3, M4A, WAV, FLAC, AAC, AIFF)</li>
+<li><strong>Audio quality</strong> (128 kbps vs 320 kbps)</li>
+<li><strong>Slight edits</strong> (trimmed intros, fade-outs, radio edits)</li>
+</ul>
+<hr>
+<h2 id="system-architecture">System Architecture </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────────────────────────────────────┐
+│                     AUDIO FINGERPRINTING PIPELINE                    │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│   Audio File                                                         │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 1. Audio Decoding    │  ← Converts any format to raw waveform   │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 2. Mono Conversion   │  ← Mix stereo channels for consistency   │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 3. Windowing         │  ← 2048 samples/window, 50% overlap       │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 4. FFT Analysis      │  ← Frequency spectrum extraction         │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 5. Peak Extraction   │  ← Top 5 frequencies per window          │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   ┌──────────────────────┐                                           │
+│   │ 6. Hash Generation   │  ← Condensed signature for fast lookup   │
+│   └──────────────────────┘                                           │
+│       ↓                                                              │
+│   AudioFingerprint (peaks + hash + duration)                         │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+</code></pre><hr>
+<h2 id="step-by-step-process">Step-by-Step Process </h2>
+<h3 id="step-1-audio-decoding">Step 1: Audio Decoding </h3>
+<p>All audio formats are decoded to raw PCM waveform data. This ensures <strong>format-independent analysis</strong> — an MP3 and WAV of the same song will produce identical waveforms.</p>
+<h3 id="step-2-mono-conversion">Step 2: Mono Conversion </h3>
+<p>Stereo files are mixed down to mono by averaging left and right channels. This ensures consistent fingerprints regardless of stereo width or panning differences.</p>
+<h3 id="step-3-sliding-window-analysis">Step 3: Sliding Window Analysis </h3>
+<p>The audio is analyzed in small overlapping segments:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Audio Waveform:   |───────────────────────────────────────────→
+                   ↑        ↑        ↑        ↑        ↑
+Window 1:         [====2048====]
+Window 2:              [====2048====]     ← 50% overlap (1024 samples)
+Window 3:                   [====2048====]
+Window 4:                        [====2048====]
+...
+</code></pre><p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Window Size</td>
+<td>2048 samples</td>
+<td>~46 milliseconds at 44.1kHz</td>
+</tr>
+<tr>
+<td>Overlap</td>
+<td>50% (1024 samples)</td>
+<td>Ensures no audio is missed</td>
+</tr>
+<tr>
+<td>Windows per 30s</td>
+<td>~1,290</td>
+<td>High temporal resolution</td>
+</tr>
+</tbody>
+</table>
+<p>Each window is smoothed with a <strong>Hann window function</strong> to prevent edge artifacts:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Hann Window Shape:
+1.0 ─────────────╱╲─────────────
+                ╱  ╲
+               ╱    ╲
+              ╱      ╲
+0.0 ─────────╱        ╲─────────
+             0       2048
+</code></pre><h3 id="step-4-fft-spectral-analysis">Step 4: FFT Spectral Analysis </h3>
+<p>Each window is transformed from time-domain (waveform) to frequency-domain (spectrum) using <strong>Fast Fourier Transform (FFT)</strong>.</p>
+<p>This reveals which frequencies are present at each moment:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Time Domain (Waveform):          Frequency Domain (Spectrum):
+                                 
+    ╱╲  ╱╲  ╱╲                        ▂▅█▃
+   ╱  ╲╱  ╲╱  ╲      ──FFT──→      ▁▃█████▂▁
+  ╱              ╲                  └───────────→
+                                    0Hz    3kHz
+</code></pre><p><strong>Frequency Resolution:</strong></p>
+<ul>
+<li>At 44.1kHz sample rate with 2048-sample FFT: <strong>~21.5 Hz per bin</strong></li>
+<li>Analysis range: <strong>300 Hz - 3000 Hz</strong> (vocal and instrument fundamentals)</li>
+</ul>
+<h3 id="step-5-peak-extraction">Step 5: Peak Extraction </h3>
+<p>For each window, the <strong>5 strongest frequencies</strong> (local maxima) are extracted:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Frequency Spectrum for One Window:
+
+Magnitude
+    │      ▲ Peak 2
+    │   ▲  │     ▲ Peak 4
+    │   │  │  ▲  │
+    │ ▲ │  │  │  │    ▲ Peak 5
+    │ │ │  │  │  │ ▲  │
+────┴─┴─┴──┴──┴──┴─┴──┴────────→ Frequency (Hz)
+   300   600  900 1200 1500 ... 3000
+
+Output: [345 Hz, 620 Hz, 890 Hz, 1240 Hz, 2100 Hz]
+</code></pre><p><strong>Why 300-3000 Hz?</strong></p>
+<ul>
+<li>Below 300 Hz: Bass/rumble, too variable across encodings</li>
+<li>Above 3000 Hz: Highs lost in lossy compression</li>
+<li>300-3000 Hz: Vocals, lead instruments — the "signature" of the song</li>
+</ul>
+<h3 id="step-6-hash-generation">Step 6: Hash Generation </h3>
+<p>A condensed hash is created for fast pre-filtering:</p>
+<ol>
+<li>Sample ~10 windows evenly across the fingerprint</li>
+<li>Take the top peak frequency from each</li>
+<li>Quantize to 50 Hz bands</li>
+<li>Convert to hexadecimal string</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Top peaks from 10 windows: [350, 400, 380, 420, 360, 390, 410, 370, 385, 395]
+Quantized (÷50):          [7,   8,   7,   8,   7,   7,   8,   7,   7,   7  ]
+Hash:                     "07080708070708070707"
+</code></pre><hr>
+<h2 id="fingerprint-comparison">Fingerprint Comparison </h2>
+<h3 id="comparison-pipeline">Comparison Pipeline </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌───────────────────────────────────────────────────────────────┐
+│                    COMPARISON PIPELINE                         │
+├───────────────────────────────────────────────────────────────┤
+│                                                                │
+│   Fingerprint A              Fingerprint B                     │
+│        ↓                          ↓                            │
+│   ┌───────────────────────────────────────────────────────┐   │
+│   │ 1. Direct Comparison (offset = 0)                      │   │
+│   │    → If similarity ≥ 85%, return immediately           │   │
+│   └───────────────────────────────────────────────────────┘   │
+│        ↓ (if &lt; 85%)                                           │
+│   ┌───────────────────────────────────────────────────────┐   │
+│   │ 2. Sliding Window Comparison                           │   │
+│   │    → Try offsets: 20, 40, 60, ... 400 windows         │   │
+│   │    → Check both directions (A offset, B offset)        │   │
+│   │    → Early exit if ≥ 85% found                         │   │
+│   └───────────────────────────────────────────────────────┘   │
+│        ↓                                                       │
+│   Return best similarity found (0.0 - 1.0)                     │
+│                                                                │
+└───────────────────────────────────────────────────────────────┘
+</code></pre><h3 id="handling-trimmedoffset-audio">Handling Trimmed/Offset Audio </h3>
+<p>Same song may be edited differently:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Song A: [INTRO------|=====ACTUAL SONG======================]
+Song B: [=====ACTUAL SONG======================]
+         ↑
+         Offset Song A by ~130 windows to align
+</code></pre><p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Max Offset</td>
+<td>400 windows</td>
+<td>~10 seconds at 44.1kHz</td>
+</tr>
+<tr>
+<td>Step Size</td>
+<td>20 windows</td>
+<td>~0.5 seconds between checks</td>
+</tr>
+<tr>
+<td>Tolerance</td>
+<td>±50 Hz</td>
+<td>Accounts for encoding variations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="window-by-window-matching">Window-by-Window Matching </h3>
+<p>For each sampled window pair:</p>
+<ol>
+<li>Compare the 5 peak frequencies</li>
+<li>A frequency "matches" if within ±50 Hz</li>
+<li>Window matches if ≥50% of peaks match</li>
+<li>Overall similarity = (matching windows) / (total windows sampled)</li>
+</ol>
+<hr>
+<h2 id="duplicate-detection-engine">Duplicate Detection Engine </h2>
+<h3 id="two-phase-approach">Two-Phase Approach </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────────────────────────────────┐
+│                    DUPLICATE ENGINE                              │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│   All Tracks with Fingerprints                                   │
+│        ↓                                                         │
+│   ┌────────────────────────────────────────────────────────┐    │
+│   │ PHASE 1: Hash Bucketing                                 │    │
+│   │   Group tracks by identical hash                        │    │
+│   │   Only compare within same bucket (very fast)           │    │
+│   └────────────────────────────────────────────────────────┘    │
+│        ↓                                                         │
+│   ┌────────────────────────────────────────────────────────┐    │
+│   │ PHASE 2: Cross-Hash Comparison                          │    │
+│   │   Compare remaining tracks against ALL tracks           │    │
+│   │   Catches similar fingerprints in different buckets     │    │
+│   └────────────────────────────────────────────────────────┘    │
+│        ↓                                                         │
+│   Duplicate Groups                                               │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre><p><strong>Phase 1</strong> provides fast O(N) grouping before expensive O(N²) comparison.</p>
+<p><strong>Phase 2</strong> catches edge cases where hash quantization put similar tracks in different buckets.</p>
+<hr>
+<h2 id="understanding-match-thresholds">Understanding Match Thresholds </h2>
+<p>The <strong>Match Threshold</strong> determines detection sensitivity:</p>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Matches Found</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>90-100%</strong></td>
+<td>Only exact duplicates</td>
+<td>Finding true duplicates with different quality</td>
+</tr>
+<tr>
+<td><strong>80-90%</strong></td>
+<td>Same song, minor differences</td>
+<td>Radio edits, slightly trimmed versions</td>
+</tr>
+<tr>
+<td><strong>70-80%</strong></td>
+<td>Same song, moderate differences</td>
+<td>Different intros/outros, extended versions</td>
+</tr>
+<tr>
+<td><strong>60-70%</strong></td>
+<td>Similar sounding content</td>
+<td>Remixes, faithful cover versions</td>
+</tr>
+<tr>
+<td><strong>Below 60%</strong></td>
+<td>Loosely similar</td>
+<td>May produce false positives</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-each-threshold-catches">What Each Threshold Catches </h3>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Catches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>90-100%</strong></td>
+<td>Same song, different formats/bitrates, renamed files</td>
+</tr>
+<tr>
+<td><strong>80-90%</strong></td>
+<td>+ Radio edits, remastered versions</td>
+</tr>
+<tr>
+<td><strong>70-80%</strong></td>
+<td>+ Extended mixes, different fade-in/out</td>
+</tr>
+<tr>
+<td><strong>60-70%</strong></td>
+<td>+ Remixes (same core), very faithful covers</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-it-cannot-match-any-threshold">What It CANNOT Match (Any Threshold) </h3>
+<p>❌ Different songs in the same genre<br>
+❌ Songs by same artist with different melodies<br>
+❌ Songs that "feel" similar but have different notes</p>
+<p><strong>Why?</strong> Fingerprints match on <strong>actual frequencies played</strong>, not subjective qualities.</p>
+<hr>
+<h2 id="accuracy-expectations">Accuracy Expectations </h2>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Expected Match Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Same song, different MP3 quality</td>
+<td>95-100%</td>
+</tr>
+<tr>
+<td>Same song, MP3 vs M4A</td>
+<td>90-98%</td>
+</tr>
+<tr>
+<td>Album version vs Radio edit</td>
+<td>80-95%</td>
+</tr>
+<tr>
+<td>Original vs Extended mix</td>
+<td>75-90%</td>
+</tr>
+<tr>
+<td>Original vs Acoustic remix</td>
+<td>55-75%</td>
+</tr>
+<tr>
+<td>Original vs Very different remix</td>
+<td>30-50%</td>
+</tr>
+<tr>
+<td>Completely different songs</td>
+<td>10-35%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="configuration-parameters">Configuration Parameters </h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sample Duration</td>
+<td>10s, 30s, 60s, Full</td>
+<td>Accuracy vs Speed</td>
+</tr>
+<tr>
+<td>Similarity Threshold</td>
+<td>50% - 100%</td>
+<td>Strictness of matching</td>
+</tr>
+<tr>
+<td>FFT Size</td>
+<td>2048 samples</td>
+<td>Frequency resolution</td>
+</tr>
+<tr>
+<td>Overlap</td>
+<td>50%</td>
+<td>Time resolution</td>
+</tr>
+<tr>
+<td>Peaks per Window</td>
+<td>5</td>
+<td>Fingerprint precision</td>
+</tr>
+<tr>
+<td>Frequency Range</td>
+<td>300-3000 Hz</td>
+<td>Focus on vocals/instruments</td>
+</tr>
+<tr>
+<td>Frequency Tolerance</td>
+<td>±50 Hz</td>
+<td>Match flexibility</td>
+</tr>
+<tr>
+<td>Max Offset</td>
+<td>~10 seconds</td>
+<td>Trim tolerance</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="performance">Performance </h2>
+<ul>
+<li><strong>Parallel Processing</strong>: Multiple files analyzed concurrently</li>
+<li><strong>Hash Pre-Filtering</strong>: O(N) grouping before O(N²) comparison</li>
+<li><strong>Sampled Comparison</strong>: Every 10th window (10x speedup)</li>
+<li><strong>Early Exit</strong>: Stops on high-confidence matches</li>
+<li><strong>Hardware Acceleration</strong>: Uses Apple's Accelerate framework for FFT</li>
+</ul>
+<p>Typical performance: <strong>Thousands of files in minutes</strong></p>
+<hr>
+<h2 id="business-applications">Business Applications </h2>
+<h3 id="1-catalog-deduplication">1. Catalog Deduplication </h3>
+<p><strong>Recommended:</strong> 85-95% threshold</p>
+<ul>
+<li>Catches format/quality duplicates</li>
+<li>Low false positive rate</li>
+</ul>
+<h3 id="2-version-grouping">2. Version Grouping </h3>
+<p><strong>Recommended:</strong> 70-85% threshold</p>
+<ul>
+<li>Groups related versions together</li>
+<li>Helps with rights management</li>
+</ul>
+<h3 id="3-coverremix-detection-experimental">3. Cover/Remix Detection (Experimental) </h3>
+<p><strong>Recommended:</strong> 60-75% threshold</p>
+<ul>
+<li>May find faithful covers</li>
+<li>Manual verification required</li>
+</ul>
+<hr>
+<h2 id="summary">Summary </h2>
+<p>Our fingerprinting technology analyzes the <strong>spectral DNA</strong> of audio:</p>
+<ol>
+<li>Decode to format-independent waveform</li>
+<li>Analyze in overlapping windows with FFT</li>
+<li>Extract top 5 peak frequencies per window</li>
+<li>Generate hash for fast pre-filtering</li>
+<li>Compare with sliding window alignment</li>
+</ol>
+<p>This enables <strong>format-agnostic, quality-agnostic, edit-tolerant</strong> duplicate detection with adjustable sensitivity.</p>
+<hr>
+<p><em>For implementation details, see the developer documentation: <code>AUDIO_FINGERPRINTING.md</code></em></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
